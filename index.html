@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <title>Elite Real Estate | Premium Properties</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <!-- Bootstrap 5.0.2 CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+      
+      <!-- Swiper CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+      <!-- PhotoSwipe CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.0/photoswipe.min.css">
+
+         <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+      <!-- CSS المخصص -->
+      <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  
+<!-- شريط التنقل المعدل مع تأثيرات متطورة -->
+<nav class="navbar animate__animated animate__fadeInDown animate__faster">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="logo animate__animated animate__fadeInLeft animate__fast">
+                <span class="logo-text">Elite</span>
+                <span class="logo-highlight">RealEstate</span>
+                <span class="logo-underline"></span>
+            </a>
+            
+            <!-- زر القائمة للجوال مع تأثير موجي -->
+            <div class="menu-toggle animate__animated animate__fadeInRight animate__fast" id="menuToggle">
+                <div class="hamburger">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+            </div>
+        </div>
+        
+        <ul class="nav-links animate__animated animate__fadeIn">
+            <li><a href="#home" class="nav-link animate__animated animate__fadeInDown animate__delay-1s">Home</a></li>
+            <li><a href="#about" class="nav-link animate__animated animate__fadeInDown animate__delay-1-1s">About</a></li>
+            <li><a href="#inv" class="nav-link animate__animated animate__fadeInDown animate__delay-1-2s">Investments</a></li>
+            <li><a href="#projects" class="nav-link animate__animated animate__fadeInDown animate__delay-1-3s">Projects</a></li>
+            <li><a href="#clients" class="nav-link animate__animated animate__fadeInDown animate__delay-1-4s">Clients</a></li>
+            <li><a href="#team" class="nav-link animate__animated animate__fadeInDown animate__delay-1-5s">Team</a></li>
+            <li><a href="#testimonials" class="nav-link animate__animated animate__fadeInDown animate__delay-1-6s">Testimonials</a></li>
+            <li><a href="#contact" class="nav-link animate__animated animate__fadeInDown animate__delay-1-7s">Contact</a></li>
+        </ul>
+        
+        <div class="auth-buttons animate__animated animate__fadeInRight animate__fast">
+            <a href="#" class="btn login-btn animate__animated animate__pulse animate__infinite animate__slower">
+                <span class="btn-text">Login</span>
+                <span class="btn-hover"></span>
+            </a>
+            <a href="#" class="btn register-btn animate__animated animate__pulse animate__infinite animate__slower">
+                <span class="btn-text">Register</span>
+                <span class="btn-hover"></span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- مؤشر التنقل المتحرك -->
+    <div class="nav-indicator"></div>
+</nav>
+
+<!-- Mobile Menu مع تأثيرات انزلاقية -->
+<div class="mobile-menu-overlay"></div>
+<div class="mobile-menu animate__animated">
+    <div class="mobile-menu-header">
+        <a href="#" class="logo">Elite<span>RealEstate</span></a>
+        <div class="close-menu-btn" id="closeMenuBtn">
+            <div class="close-icon">
+                <span class="close-line line1"></span>
+                <span class="close-line line2"></span>
+            </div>
+        </div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#inv" class="mobile-nav-link">Investments</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#clients" class="mobile-nav-link">Clients</a></li>
+        <li><a href="#team" class="mobile-nav-link">Team</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-auth-buttons">
+        <a href="#" class="btn mobile-login-btn">Login</a>
+        <a href="#" class="btn mobile-register-btn">Register</a>
+    </div>
+</div>
+
+<!-- Hero Section معدل مع تأثيرات مبهرة -->
+<section id="home" class="hero-section">
+    <div class="hero-particles" id="particles-js"></div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text animate__animated animate__fadeInUp">
+                <h1 class="hero-title animate__animated animate__fadeInDown animate__delay-0-5s">
+                    <span class="title-word word1">Discover</span>
+                    <span class="title-word word2">Luxury</span>
+                    <span class="title-word word3">Real Estate</span>
+                </h1>
+                
+                <p class="hero-subtitle animate__animated animate__fadeIn animate__delay-1s">
+                    <span class="typing-text">We offer the best investment opportunities in the market</span>
+                    <span class="typing-cursor">|</span>
+                </p>
+                
+                <div class="search-box animate__animated animate__fadeInUp animate__delay-1-5s">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="propertySearch" placeholder="Search by location, price, or type..." 
+                               class="animate__animated animate__fadeInLeft animate__delay-2s">
+                        <div class="search-icon animate__animated animate__fadeInRight animate__delay-2s">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <button class="search-btn animate__animated animate__fadeInRight animate__delay-2s" id="searchButton">
+                        <span>Search</span>
+                        <div class="btn-liquid"></div>
+                    </button>
+                </div>
+                
+                <div id="searchResults" class="search-results animate__animated animate__zoomIn animate__delay-2-5s"></div>
+            </div>
+            
+            <div class="hero-image animate__animated animate__fadeInRight animate__delay-1s">
+                <div class="image-frame animate__animated animate__zoomIn animate__delay-1-5s">
+                    <div class="image-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                         alt="Luxury property" 
+                         class="floating-image">
+                    <div class="image-shine"></div>
+                </div>
+                
+                <div class="image-badge animate__animated animate__bounceIn animate__delay-2s">
+                    <span>Featured</span>
+                    <div class="badge-pulse"></div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="section-header" data-scroll="fade-down">
+            <h2>About <span>Our Company</span></h2>
+            <p data-scroll="fade" data-delay="100">Our success story and excellence in the real estate market</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text" data-scroll="fade-left">
+                <h3 data-scroll="fade" data-delay="100">Our Vision & Mission</h3>
+                <p data-scroll="fade" data-delay="150">At Elite Real Estate, we aim to provide integrated real estate solutions that meet all our valued clients' needs. With a team of experts and specialists, we guarantee you a unique experience in real estate investment.</p>
+                <div class="stats">
+                    <div class="stat-item" data-scroll="fade-up" data-delay="200">
+                        <div class="counter" data-target="150">0</div>
+                        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                        <p>Successful Projects</p>
+                    </div>
+                    <div class="stat-item" data-scroll="fade-up" data-delay="220">
+                        <div class="counter" data-target="500">0</div>
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <p>Satisfied Clients</p>
+                    </div>
+                    <div class="stat-item" data-scroll="fade-up" data-delay="240">
+                        <div class="counter" data-target="20">0</div>
+                        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                        <p>Awards & Honors</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-image-frame" data-scroll="fade-right" data-delay="100">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                     alt="About Our Company">
+                <div class="image-badge" data-scroll="fade" data-delay="180">
+                    <span>Since 2010</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Investments Section with Same Scroll Animations -->
+<section id="investments" class="investments-section">
+    <div class="container">
+        <div class="section-header" data-scroll="fade-down">
+            <h2>Investment <span>Opportunities</span></h2>
+            <p data-scroll="fade" data-delay="100">Discover our premium real estate investment options</p>
+        </div>
+        
+        <div class="investment-calculator" data-scroll="fade-up">
+            <h3 data-scroll="fade" data-delay="150">Investment Calculator</h3>
+            <form class="calculator-form">
+                <div class="form-group" data-scroll="fade-left" data-delay="200">
+                    <label for="investment-amount">Investment Amount (SAR)</label>
+                    <input type="range" id="investment-amount" min="50000" max="5000000" value="1000000" step="50000">
+                    <span id="amount-value">1,000,000 SAR</span>
+                </div>
+                <div class="form-group" data-scroll="fade-left" data-delay="250">
+                    <label for="investment-period">Investment Period (Years)</label>
+                    <select id="investment-period">
+                        <option value="1">1 Year</option>
+                        <option value="3">3 Years</option>
+                        <option value="5" selected>5 Years</option>
+                        <option value="10">10 Years</option>
+                    </select>
+                </div>
+                <div class="form-group" data-scroll="fade-left" data-delay="300">
+                    <label for="property-type">Property Type</label>
+                    <select id="property-type">
+                        <option value="residential">Residential</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="land">Land</option>
+                    </select>
+                </div>
+                <button type="button" id="calculate-btn" data-scroll="fade-up" data-delay="350">Calculate Returns</button>
+            </form>
+            
+            <div class="calculator-results">
+                <div class="result-card" data-scroll="fade-up" data-delay="400">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Expected Return</h4>
+                    <p id="expected-return">425,000 SAR</p>
+                </div>
+                <div class="result-card" data-scroll="fade-up" data-delay="450">
+                    <i class="fas fa-percentage"></i>
+                    <h4>Annual Return</h4>
+                    <p id="annual-return">8.5%</p>
+                </div>
+                <div class="result-card" data-scroll="fade-up" data-delay="500">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h4>ROI Period</h4>
+                    <p id="roi-period">8 years</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="investment-opportunities">
+            <h3 data-scroll="fade-down" data-delay="550">Featured Investments</h3>
+            <div class="opportunities-grid">
+                <div class="opportunity-card" data-scroll="fade-up" data-delay="600">
+                    <div class="opportunity-image">
+                        <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80" alt="Sarawat Villas">
+                        <div class="opportunity-badge" data-scroll="fade" data-delay="650">Premium</div>
+                    </div>
+                    <div class="opportunity-info">
+                        <h4>Sarawat Villas Compound</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p>
+                        <div class="opportunity-meta">
+                            <span><i class="fas fa-arrow-up"></i> 8.5% Return</span>
+                            <span><i class="fas fa-clock"></i> 5 Years</span>
+                        </div>
+                        <button class="opportunity-btn">View Details</button>
+                    </div>
+                </div>
+                
+                <div class="opportunity-card" data-scroll="fade-up" data-delay="700">
+                    <div class="opportunity-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Business Tower">
+                        <div class="opportunity-badge" data-scroll="fade" data-delay="750">Commercial</div>
+                    </div>
+                    <div class="opportunity-info">
+                        <h4>International Business Tower</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Jeddah, Saudi Arabia</p>
+                        <div class="opportunity-meta">
+                            <span><i class="fas fa-arrow-up"></i> 10.2% Return</span>
+                            <span><i class="fas fa-clock"></i> 3 Years</span>
+                        </div>
+                        <button class="opportunity-btn">View Details</button>
+                    </div>
+                </div>
+                
+                <div class="opportunity-card" data-scroll="fade-up" data-delay="800">
+                    <div class="opportunity-image">
+                        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Investment Land">
+                        <div class="opportunity-badge" data-scroll="fade" data-delay="850">High ROI</div>
+                    </div>
+                    <div class="opportunity-info">
+                        <h4>Residential Investment Land</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Dammam, Saudi Arabia</p>
+                        <div class="opportunity-meta">
+                            <span><i class="fas fa-arrow-up"></i> 12.5% Return</span>
+                            <span><i class="fas fa-clock"></i> 4 Years</span>
+                        </div>
+                        <button class="opportunity-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section with Scroll Animations -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <div class="section-header" data-scroll="fade-down">
+            <h2>Latest <span>Projects</span></h2>
+            <p data-scroll="fade" data-delay="100">Explore our distinguished real estate projects</p>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- JavaScript will populate this -->
+        </div>
+    </div>
+</section>
+
+<!-- Project Modal with Animations -->
+<div class="project-modal" id="projectModal">
+    <div class="modal-content" data-scroll="zoomIn">
+        <span class="close-modal" data-scroll="fade" data-delay="500">&times;</span>
+        <div class="modal-body">
+            <div class="modal-image" data-scroll="fade-left">
+                <img id="modalProjectImage" src="" alt="">
+            </div>
+            <div class="modal-info" data-scroll="fade-right">
+                <h2 id="modalProjectTitle"></h2>
+                <p id="modalProjectDesc"></p>
+                <div class="modal-meta" data-scroll="fade-up" data-delay="300">
+                    <p><i class="fas fa-tag"></i> <span id="modalProjectPrice"></span></p>
+                    <p><i class="fas fa-ruler-combined"></i> <span id="modalProjectArea"></span></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <span id="modalProjectLocation"></span></p>
+                </div>
+                <button class="btn contact-btn" data-scroll="fade-up" data-delay="500">Contact Agent</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Clients Section with About Section Animations -->
+<section id="clients" class="clients-section">
+    <div class="container">
+        <div class="section-header" data-scroll="fade-down">
+            <h2>Our <span>Clients</span></h2>
+            <p data-scroll="fade" data-delay="100">Trusted by leading companies worldwide</p>
+        </div>
+        <div class="clients-grid">
+            <!-- JavaScript will populate this -->
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="team-section">
+    <div class="container">
+        <div class="section-header animate__animated animate__fadeInDown">
+            <h2>Our <span>Team</span></h2>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">Meet our professional team members</p>
+        </div>
+        <div class="team-cards">
+            <!-- JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section">
+    <div class="container">
+        <div class="section-header animate__animated animate__fadeInDown">
+            <h2>Client <span>Testimonials</span></h2>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">What our clients say about our services</p>
+        </div>
+        <div class="testimonials-slider">
+            <!--JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section with Scroll Animations -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <div class="section-header" data-scroll="fade-down">
+            <h5 class="section-subtitle en" data-scroll="fade" data-delay="100">Let's Connect</h5>
+            <h5 class="section-subtitle ar" style="display:none" data-scroll="fade" data-delay="100">لنتواصل</h5>
+            <h1 class="section-title en" data-scroll="fade" data-delay="150">Get In Touch</h1>
+            <h1 class="section-title ar" style="display:none" data-scroll="fade" data-delay="150">كن على تواصل</h1>
+            <div class="contact-divider" data-scroll="fade" data-delay="200"></div>
+        </div>
+        
+        <div class="contact-content">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="info-item" data-scroll="fade-left" data-delay="200">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-text">
+                        <h4 class="en">Our Location</h4>
+                        <h4 class="ar" style="display:none">موقعنا</h4>
+                        <p>123 Sunshine Avenue, Cairo, Egypt</p>
+                    </div>
+                </div>
+                
+                <div class="info-item" data-scroll="fade-left" data-delay="250">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-text">
+                        <h4 class="en">Call Us</h4>
+                        <h4 class="ar" style="display:none">اتصل بنا</h4>
+                        <p>+20 123 456 7890</p>
+                    </div>
+                </div>
+                
+                <div class="info-item" data-scroll="fade-left" data-delay="300">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-text">
+                        <h4 class="en">Email Us</h4>
+                        <h4 class="ar" style="display:none">راسلنا</h4>
+                        <p>hello@sunshine.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item" data-scroll="fade-left" data-delay="350">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="info-text">
+                        <h4 class="en">We're Available</h4>
+                        <h4 class="ar" style="display:none">متاحون</h4>
+                        <p class="en">Sunday - Thursday: 9AM - 5PM</p>
+                        <p class="ar" style="display:none">الأحد - الخميس: 9 صباحًا - 5 مساءً</p>
+                    </div>
+                </div>
+                
+                <div class="contact-social" data-scroll="fade-left" data-delay="400">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="contact-form" data-scroll="fade-right" data-delay="300">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-input" required>
+                        <label class="form-label en" for="name">Your Beautiful Name</label>
+                        <label class="form-label ar" style="display:none" for="name">اسمك الجميل</label>
+                    </div>
+                      
+                    <div class="form-group">
+                        <input type="email" id="email" class="form-input" required>
+                        <label for="email" class="form-label en">Your Email Address</label>
+                        <label for="email" class="form-label ar" style="display:none">بريدك الإلكتروني</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="subject" class="form-input" required>
+                        <label for="subject" class="form-label en">What's On Your Mind?</label>
+                        <label for="subject" class="form-label ar" style="display:none">ما الذي يشغلك؟</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" class="form-input" rows="5" required></textarea>
+                        <label for="message" class="form-label en">Your Wonderful Message</label>
+                        <label for="message" class="form-label ar" style="display:none">رسالتك الرائعة</label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn en">
+                        <span>Send With Love</span>
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button type="submit" class="submit-btn ar" style="display:none">
+                        <span>أرسل مع الحب</span>
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col animate__animated animate__fadeInUp">
+                    <h3>Elite Real Estate</h3>
+                    <p>A leading company in real estate and investment, providing innovative solutions that meet all our clients' needs.</p>
+                </div>
+                <div class="footer-col animate__animated animate__fadeInUp animate__delay-1s">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col animate__animated animate__fadeInUp animate__delay-1.5s">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#">Property Sales</a></li>
+                        <li><a href="#">Property Purchase</a></li>
+                        <li><a href="#">Property Management</a></li>
+                        <li><a href="#">Real Estate Consultancy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col animate__animated animate__fadeInUp animate__delay-2s">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates on our offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom animate__animated animate__fadeIn">
+                <p>&copy; 2023 Elite Real Estate. All rights reserved.</p>
+                <div class="mobile-menu-footer">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p>&copy; 2023 EliteRealEstate</p>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="auth-modal" id="loginModal">
+        <div class="auth-container">
+            <span class="close-modal">&times;</span>
+            <form id="loginForm" class="form">
+                <p id="heading">Login</p>
+                <div class="field">
+                    <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"></path>
+                    </svg>
+                    <input autocomplete="off" placeholder="Username or Email" id="loginUsername" class="input-field" type="text" required>
+                </div>
+                <div class="field">
+                    <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
+                    </svg>
+                    <input placeholder="Password" id="loginPassword" class="input-field" type="password" required>
+                </div>
+                <div class="btn">
+                    <button type="submit" class="button1">&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;</button>
+                    <button type="button" class="button2 show-register">Sign Up</button>
+                </div>
+                <button type="button" class="button3 forgot-password">Forgot Password?</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="auth-modal" id="registerModal">
+        <div class="auth-container">
+            <span class="close-modal">&times;</span>
+            <form id="registerForm" class="form">
+                <p id="heading">Create Account</p>
+                <div class="field">
+                    <input placeholder="Full Name" id="regName" class="input-field" type="text" required>
+                </div>
+                <div class="field">
+                    <input placeholder="Email" id="regEmail" class="input-field" type="email" required>
+                </div>
+                <div class="field">
+                    <input placeholder="Phone Number" id="regPhone" class="input-field" type="tel" required>
+                </div>
+                <div class="field">
+                    <input placeholder="Password" id="regPassword" class="input-field" type="password" required>
+                </div>
+                <div class="field">
+                    <input placeholder="Confirm Password" id="regConfirmPassword" class="input-field" type="password" required>
+                </div>
+                <div class="form-group" style="color: #d3d3d3; font-size: 0.9em;">
+                    <label>
+                        <input type="checkbox" required> I agree to the <a href="#" style="color: var(--secondary-color);">Terms & Conditions</a>
+                    </label>
+                </div>
+                <div class="btn">
+                    <button type="submit" class="button1">Sign Up</button>
+                    <button type="button" class="button2 show-login">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div class="auth-modal" id="forgotModal">
+        <div class="auth-container">
+            <span class="close-modal">&times;</span>
+            <form id="forgotForm" class="form">
+                <p id="heading">Reset Password</p>
+                <div class="field">
+                    <input placeholder="Email" id="forgotEmail" class="input-field" type="email" required>
+                </div>
+                <p style="color: #d3d3d3; text-align: center; margin: 1em 0;">We'll send you a password reset link to your email</p>
+                <div class="btn">
+                    <button type="submit" class="button1">Send Link</button>
+                    <button type="button" class="button2 show-login">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- JavaScript Libraries -->
+    <!-- Bootstrap 5.0.2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    
+    <!-- Counter Up JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    
+    <!-- Waypoints JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- JS المخصص -->
+    <script src="main.js"></script>
+    <script src="auth.js"></script>
+    
+</body>
+</html>
+
